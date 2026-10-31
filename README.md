@@ -1,6 +1,6 @@
 **English** | [Русский](README.ru.md)
 
-[![Build Status](https://github.com/nesquikpro/monkey/actions/workflows/gradle.yml/badge.svg)](https://github.com/nesquikpro/monkey/actions/workflows/gradle.yml)
+[![Build Status](https://github.com/nesquikpro/monkey/actions/workflows/gradle.yml/badge.svg)](https://github.com/nnsquik/essentials/actions/workflows/gradle.yml)
 
 ---
 
