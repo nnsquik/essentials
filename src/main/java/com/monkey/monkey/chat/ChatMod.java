@@ -17,7 +17,18 @@ public class ChatMod {
             return;
         }
 
+        addTranslateButton(event.message, plain);
         applyCopy(event.message, plain);
+    }
+
+    private void addTranslateButton(IChatComponent message, String plain) {
+        int id = MessageStore.put(plain);
+
+        ChatComponentText button = new ChatComponentText(" [T]");
+        button.setChatStyle(new ChatStyle()
+                .setColor(EnumChatFormatting.AQUA)
+                .setChatClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/trmsg " + id)));
+        message.appendSibling(button);
     }
 
     private void applyCopy(IChatComponent component, String text) {
